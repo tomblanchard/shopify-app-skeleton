@@ -1,0 +1,19 @@
+{
+  "name": "shopify-app-skeleton",
+  "version": "1.0.0",
+  "author": "Tom Blanchard",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "shopify-api-node": "^2.2.0",
+    "shopify-token": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js,ejs,json"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

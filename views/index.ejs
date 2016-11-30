@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>App</title>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/microapps/Shopify-Embedded-App-Frontend-Framework/master/css/seaff.css" />
+
+    <style>
+      .product-count {
+        text-align: center;
+      }
+
+      .product-count-no {
+        font-size: 5em;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="section">
+      <div class="section-content">
+        <div class="section-row">
+          <div class="section-cell">
+            <div class="product-count">
+              Your shop has the following amount of products:
+
+              <div class="product-count-no">
+                <%= productCount %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+
+    <script>
+      ShopifyApp.init({
+        apiKey: "<%= apiKey %>",
+        shopOrigin: "https://<%= shopName %>.myshopify.com"
+      });
+    </script>
+
+    <script>
+      ShopifyApp.ready(function() {
+        ShopifyApp.Bar.initialize({
+          title: "Count my products!"
+        });
+      });
+    </script>
+  </body>
+</html>
