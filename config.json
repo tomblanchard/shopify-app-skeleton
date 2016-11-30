@@ -1,5 +1,5 @@
 {
-  "redirectUri": "shopify-app-skeleton.herokuapp.com/callback",
+  "redirectUri": "https://shopify-app-skeleton.herokuapp.com/callback",
   "apiKey": "71edbeee5864683a52f9434e10c808c1",
   "sharedSecret": "3ca0bbe6962408e2d5a391363ba22a14",
   "scopes": [
