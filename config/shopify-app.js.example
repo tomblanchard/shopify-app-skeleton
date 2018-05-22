@@ -1,0 +1,12 @@
+module.exports = {
+  development: {
+    host: "https://localhost",
+    key: "1234567890",
+    secret: "1234567890"
+  },
+  production: {
+    host: "https://domain.com",
+    key: "1234567890",
+    secret: "1234567890"
+  }
+};
